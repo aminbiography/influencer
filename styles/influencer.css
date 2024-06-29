@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: #000000;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 60px;
+    border-radius: 25px;
+    background: #FF1493;
+}
+
+.header {
+    background: #F2F3F5;
+    background-image: url('../images/main-camera.png'), url('../images/camera.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+}
+
+/* header and navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 150px 50px 150px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 25px;
+    color: #FF1493;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+/* banner styles */
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 600px;
+    margin: 0px 0px 100px 150px;
+}
+
+.banner-title {
+    font-weight: 900;
+    font-size: 55px;
+    color: #aaaaaa;
+}
+
+.banner-sub-title {
+    font-weight: 1600;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.banner-description {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* logo-collection-style */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+}
+.companie {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+}
+.companie img {
+    height: 100px;
+    width: 100px;
+}
+.hr {
+    border: 1px solid #63666A;
+}
+
+/* about section styles */
+.collection-title {
+    text-align: center;
+    padding: 100px 0px 70px 0px;
+}
+
+.collection-all {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+}
+.collection {
+    margin: auto;
+    background-color: #edf1fe;
+    padding: 15px;
+    border-color: #edf1fe;
+}
+.collection-subtitle {
+    padding: 10px 0px 10px 0px;
+}
+.collection-info {
+    padding: 0px 0px 10px 0px;
+}
+
+.fa-star.filled {
+    color: #D4A017;
+}
+
+.fa-star.empty {
+    color: #aaaaaa;
+}
+.more {
+    color: #FF1493;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 50px 100px 100px 1200px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px 50px 100px;
+}
+.product {
+    padding: 0px 150px;
+}
+.product-heading {
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.product-description {
+    font-weight: 300;
+    font-size: 20px;
+    font: color #000;
+    margin-bottom: 15px;
+}
+.btn-primary1 {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 60px;
+    border-radius: 0px;
+    background: #FF1493;
+}
+
+.footer-container {
+    height: 250px;
+    text-align: center;
+    background-color: #0B0B45;
+    font: color #FFFFFF;
+}
+.footer {
+    padding: 30px;
+}
+.social {
+    padding: 20px;
+    color: #F2F3F5;
+    font-size: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    nav {
+        padding: 50px 100px;
+    }
+    .header {
+        background: #F2F3F5;
+        background-image: url('../images/main-camera.png'), url('../images/camera.png');
+        background-position: bottom;
+    }
+    .banner {
+        margin: 0px 0px 80px 100px;
+    }
+    .more {
+        padding: 50px 50px 100px 1000px;
+    }
+    .products {
+        padding: 50px 50px 50px 50px;
+    }
+    .product {
+        padding: 0px 50px;
+    }
+    .companie {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        padding: 15px 0px 15px 0px;
+    }
+    .collection-all {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        padding: 40px 80px;
+    }
+    .header {
+        background: #F2F3F5;
+        background-image: url('../images/main-camera.png'), url('../images/camera.png');
+        background-position: bottom;
+    }
+    .banner {
+        margin: 0px 0px 60px 80px;
+    }
+    .more {
+        padding: 50px 50px 100px 800px;
+    }
+    .products {
+        padding: 50px 40px 50px 40px;
+    }
+    .product {
+        padding: 0px 40px;
+    }
+    .companie {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 15px 0px 15px 0px;
+        margin-left: 20%;
+    }
+    .collection-all {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 30px 40px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    nav li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .header {
+        background: #F2F3F5;
+        background-image: url('../images/main-camera.png'), url('../images/camera.png');
+        background-position: bottom;
+    }
+    .banner {
+        flex-direction: column;
+        height: auto;
+        margin: 0px 20px 40px 20px;
+        text-align: center;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .banner-sub-title {
+        font-size: 22px;
+    }
+    .banner-description {
+        font-size: 16px;
+    }
+    .more {
+        padding: 50px 20px 100px 20px;
+    }
+    .products {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+    .product {
+        padding: 0px 20px;
+    }
+    .companie {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 15px 0px 15px 0px;
+        margin-left: 20%;
+    }
+    .collection-all {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        padding: 20px;
+    }
+    .header {
+        background: #F2F3F5;
+        background-image: url('../images/main-camera.png'), url('../images/camera.png');
+        background-position: bottom;
+    }
+    .banner {
+        margin: 0px 10px 30px 10px;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
+    .banner-sub-title {
+        font-size: 18px;
+    }
+    .banner-description {
+        font-size: 14px;
+    }
+    .more {
+        padding: 50px 10px 100px 10px;
+    }
+    .products {
+        padding: 30px 10px;
+    }
+    .product {
+        padding: 0px 10px;
+    }
+    .companie {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 15px 0px 15px 0px;
+        margin-left: 20%;
+    }
+    .collection-all {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+}
